@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+    </head>
+
+    <body>
+        <div id="container">
+            <h1>QR Code Scanner</h1>
+        
+            <div>
+                <a id="btn-scan-qr">Scan</a>
+            </div>
+            
+            <canvas hidden="" id="qr-canvas"></canvas>
+        
+            <div id="qr-result" hidden="">
+                <b>Data:</b> <span id="outputData"></span>
+            </div>
+        </div>
+
+        
+
+        <script src="https://rawgit.com/sitepoint-editors/jsqrcode/master/src/qr_packed.js"></script>
+        <script src="scanner.js"></script>
+
+    </body>
+</html>
+
