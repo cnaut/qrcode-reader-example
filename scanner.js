@@ -22,7 +22,9 @@ qrcode.callback = (res) => {
         canvasElement.hidden = true;
 
         if (outputData.innerText.includes("http")) {
-            window.location.href = outputData.innerText;
+            document.getElementById('frame').src = outputData.innerText;
+            document.getElementById('frame').style.display = "block";
+
         }
     }
 };
